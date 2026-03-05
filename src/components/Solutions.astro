@@ -1,0 +1,385 @@
+---
+// Solutions Section - Design Premium Glassmorphism com Grid Assimétrico
+---
+
+<section id="solucoes" class="relative py-32 bg-gradient-to-b from-dark-950 via-dark-900 to-dark-950 overflow-hidden">
+	<!-- Background Elements Animados -->
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-1/4 left-1/3 w-96 h-96 bg-primary-500 rounded-full blur-3xl animate-pulse" style="animation-duration: 4s;"></div>
+		<div class="absolute bottom-1/4 right-1/3 w-96 h-96 bg-accent-500 rounded-full blur-3xl animate-pulse" style="animation-duration: 6s; animation-delay: 1s;"></div>
+	</div>
+
+	<div class="relative z-10 container mx-auto px-6">
+		<!-- Header -->
+		<div class="max-w-4xl mx-auto text-center mb-20">
+			<div class="inline-flex items-center gap-2 px-5 py-2 bg-accent-500/10 border border-accent-500/30 rounded-full text-accent-500 text-sm font-semibold mb-8 backdrop-blur-sm">
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+					<path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+				</svg>
+				Soluções Sob Medida
+			</div>
+			<h2 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+				Do <span class="bg-gradient-to-r from-accent-500 via-emerald-400 to-primary-500 bg-clip-text text-transparent">Simples</span> ao 
+				<span class="bg-gradient-to-r from-primary-500 via-sky-400 to-cyan-400 bg-clip-text text-transparent">Extraordinário</span>
+			</h2>
+			<p class="text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto">
+				Cada projeto é único. Construímos a automação ideal para suas necessidades, do básico com Alexa até infraestrutura avançada com Raspberry Pi.
+			</p>
+		</div>
+
+		<!-- Asymmetric Grid Layout -->
+		<div class="grid md:grid-cols-12 gap-6 max-w-7xl mx-auto mb-20">
+			
+			<!-- Card 1: Início Prático (Alexa + Marketplace) - Col-span 6 -->
+			<div class="md:col-span-6 group relative bg-slate-900/60 backdrop-blur-md border border-emerald-500/20 rounded-3xl p-8 hover:border-emerald-500/60 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(16,185,129,0.25)]">
+				<!-- Icon Central -->
+				<div class="flex justify-center mb-6">
+					<div class="w-20 h-20 bg-gradient-to-br from-emerald-500/20 to-sky-500/20 border-2 border-emerald-500/40 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-10 h-10 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Badge -->
+				<div class="flex justify-center mb-4">
+					<span class="px-4 py-1.5 bg-emerald-500/20 border border-emerald-500/40 rounded-full text-xs font-bold text-emerald-400 backdrop-blur-sm">
+						NÍVEL 1 • INÍCIO
+					</span>
+				</div>
+
+				<!-- Título -->
+				<h3 class="text-3xl font-bold text-white text-center mb-3 group-hover:text-emerald-400 transition-colors">
+					Início Prático
+				</h3>
+				<p class="text-center text-slate-400 text-sm mb-6">Controle por voz e app de qualquer lugar</p>
+
+				<!-- Features -->
+				<ul class="space-y-3 mb-6">
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Alexa Integrada:</strong> "Alexa, ligar luzes da sala"</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Dispositivos Acessíveis:</strong> Mercado Livre e Shopee compatíveis</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Cenas Simples:</strong> "Modo Cinema" com um comando</span>
+					</li>
+				</ul>
+
+				<!-- Footer -->
+				<div class="pt-4 border-t border-slate-700/50">
+					<p class="text-sm text-slate-500 text-center">Ideal para quem está começando</p>
+				</div>
+			</div>
+
+			<!-- Card 2: Eficiência Inteligente - Col-span 6 -->
+			<div class="md:col-span-6 group relative bg-slate-900/60 backdrop-blur-md border border-accent-500/20 rounded-3xl p-8 hover:border-accent-500/60 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(16,185,129,0.25)]">
+				<!-- Icon Central -->
+				<div class="flex justify-center mb-6">
+					<div class="w-20 h-20 bg-gradient-to-br from-accent-500/20 to-emerald-600/20 border-2 border-accent-500/40 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-10 h-10 text-accent-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Badge -->
+				<div class="flex justify-center mb-4">
+					<span class="px-4 py-1.5 bg-accent-500/20 border border-accent-500/40 rounded-full text-xs font-bold text-accent-400 backdrop-blur-sm">
+						NÍVEL 2 • ECONOMIA
+					</span>
+				</div>
+
+				<!-- Título -->
+				<h3 class="text-3xl font-bold text-white text-center mb-3 group-hover:text-accent-400 transition-colors">
+					Eficiência Inteligente
+				</h3>
+				<p class="text-center text-slate-400 text-sm mb-6">Reduza custos com automação estratégica</p>
+
+				<!-- Features -->
+				<ul class="space-y-3 mb-6">
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Regras Inteligentes:</strong> "Porta aberta = Ar desliga"</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Monitoramento Energético:</strong> Gráficos de consumo em tempo real</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-accent-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Alertas Proativos:</strong> Notificações de consumo anormal</span>
+					</li>
+				</ul>
+
+				<!-- Footer -->
+				<div class="pt-4 border-t border-slate-700/50">
+					<p class="text-sm text-slate-500 text-center">ROI em 12-18 meses</p>
+				</div>
+			</div>
+
+			<!-- Card 3: Experiência VIP -->
+			<div class="md:col-span-6 group relative bg-slate-900/60 backdrop-blur-md border border-primary-500/20 rounded-3xl p-8 hover:border-primary-500/60 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(14,165,233,0.3)]">
+				<!-- Icon Central -->
+				<div class="flex justify-center mb-6">
+					<div class="w-20 h-20 bg-gradient-to-br from-primary-500/20 to-sky-600/20 border-2 border-primary-500/40 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-10 h-10 text-primary-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+							<circle cx="12" cy="10" r="3"></circle>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Badge -->
+				<div class="flex justify-center mb-4">
+					<span class="px-4 py-1.5 bg-primary-500/20 border border-primary-500/40 rounded-full text-xs font-bold text-primary-400 backdrop-blur-sm">
+						NÍVEL 3 • PREMIUM
+					</span>
+				</div>
+
+				<!-- Título -->
+				<h3 class="text-3xl font-bold text-white text-center mb-3 group-hover:text-primary-400 transition-colors">
+					Experiência VIP
+				</h3>
+				<p class="text-center text-slate-400 text-sm mb-6">Automação preditiva que antecipa suas necessidades</p>
+
+				<!-- Features -->
+				<ul class="space-y-3 mb-6">
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">GPS Tracking:</strong> Casa te recebe antes de entrar</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Sequências Complexas:</strong> Portão + Luzes + AC + Música</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Ambientes Dinâmicos:</strong> Luz e temperatura por horário</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-primary-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Presença Inteligente:</strong> Detecta quem chegou e personaliza</span>
+					</li>
+				</ul>
+
+				<!-- Footer -->
+				<div class="pt-4 border-t border-slate-700/50">
+					<p class="text-sm text-slate-500 text-center">O máximo em conforto residencial</p>
+				</div>
+			</div>
+
+			<!-- Card 4: Segurança Crítica com Câmeras/DVR -->
+			<div class="md:col-span-6 group relative bg-slate-900/60 backdrop-blur-md border border-orange-500/20 rounded-3xl p-8 hover:border-orange-500/60 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(249,115,22,0.3)]">
+				<!-- Icon Central -->
+				<div class="flex justify-center mb-6">
+					<div class="w-20 h-20 bg-gradient-to-br from-orange-500/20 to-red-600/20 border-2 border-orange-500/40 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-10 h-10 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Badge -->
+				<div class="flex justify-center mb-4">
+					<span class="px-4 py-1.5 bg-orange-500/20 border border-orange-500/40 rounded-full text-xs font-bold text-orange-400 backdrop-blur-sm">
+						NÍVEL 4 • SEGURANÇA CRÍTICA
+					</span>
+				</div>
+
+				<!-- Título -->
+				<h3 class="text-3xl font-bold text-white text-center mb-3 group-hover:text-orange-400 transition-colors">
+					Monitoramento Total
+				</h3>
+				<p class="text-center text-slate-400 text-sm mb-6">Câmeras IP/Wi-Fi, DVR e acesso remoto via internet</p>
+
+				<!-- Features -->
+				<ul class="space-y-3 mb-6">
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Câmeras IP e Wi-Fi:</strong> Integração total com Home Assistant</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">DVRs Conectados:</strong> Gravação contínua com acesso via app</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Acesso Total Internet:</strong> Visualização em tempo real de qualquer lugar</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Alertas Inteligentes:</strong> Notificações por movimento e gravações</span>
+					</li>
+				</ul>
+
+				<!-- Footer -->
+				<div class="pt-4 border-t border-slate-700/50">
+					<p class="text-sm text-slate-500 text-center">Proteção 24/7 com tecnologia de ponta</p>
+				</div>
+			</div>
+
+			<!-- Card 5: Soberania Total com Raspberry Pi -->
+			<div class="md:col-span-6 group relative bg-slate-900/60 backdrop-blur-md border border-red-500/20 rounded-3xl p-8 hover:border-red-500/60 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(239,68,68,0.3)]">
+				<!-- Icon Central -->
+				<div class="flex justify-center mb-6">
+					<div class="w-20 h-20 bg-gradient-to-br from-red-500/20 to-rose-600/20 border-2 border-red-500/40 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-10 h-10 text-red-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Badge -->
+				<div class="flex justify-center mb-4">
+					<span class="px-4 py-1.5 bg-red-500/20 border border-red-500/40 rounded-full text-xs font-bold text-red-400 backdrop-blur-sm">
+						NÍVEL 5 • SOBERANIA TOTAL
+					</span>
+				</div>
+
+				<!-- Título -->
+				<h3 class="text-3xl font-bold text-white text-center mb-3 group-hover:text-red-400 transition-colors">
+					Raspberry Pi
+				</h3>
+				<p class="text-center text-slate-400 text-sm mb-6">Servidor local • Zero nuvem • 100% privado</p>
+
+				<!-- Features -->
+				<ul class="space-y-3 mb-6">
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Raspberry Pi:</strong> Hub central sem dependência de nuvem</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Offline First:</strong> Funciona sem internet</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">IA de Segurança:</strong> Detecção de pessoas vs animais</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Backup Criptografado:</strong> Seus dados só seus</span>
+					</li>
+				</ul>
+
+				<!-- Footer -->
+				<div class="pt-4 border-t border-red-500/30">
+					<p class="text-sm text-slate-500 text-center">Soberania digital total</p>
+				</div>
+			</div>
+
+			<!-- Card 6: Blindagem Perimetral (Alarmes & Liberdade) -->
+			<div class="md:col-span-6 group relative bg-slate-900/60 backdrop-blur-md border border-orange-500/20 rounded-3xl p-8 hover:border-orange-500/60 transition-all duration-500 hover:scale-105 hover:shadow-[0_0_50px_rgba(249,115,22,0.3)]">
+				<!-- Icon Central -->
+				<div class="flex justify-center mb-6">
+					<div class="w-20 h-20 bg-gradient-to-br from-orange-500/20 to-amber-600/20 border-2 border-orange-500/40 rounded-2xl flex items-center justify-center backdrop-blur-sm group-hover:scale-110 transition-transform duration-300">
+						<svg class="w-10 h-10 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"></path>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Badge -->
+				<div class="flex justify-center mb-4">
+					<span class="px-4 py-1.5 bg-orange-500/20 border border-orange-500/40 rounded-full text-xs font-bold text-orange-400 backdrop-blur-sm">
+						NÍVEL 6 • BLINDAGEM PERIMETRAL
+					</span>
+				</div>
+
+				<!-- Título -->
+				<h3 class="text-3xl font-bold text-white text-center mb-3 group-hover:text-orange-400 transition-colors">
+					Alarmes & Liberdade
+				</h3>
+				<p class="text-center text-slate-400 text-sm mb-6">Segurança agnóstica: integramos sua marca favorita</p>
+
+				<!-- Features -->
+				<ul class="space-y-3 mb-6">
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Ecossistema Aberto:</strong> JFL, Intelbras ou marcas globais — você escolhe.</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Integração Técnica:</strong> Analisamos o hardware para automação via Home Assistant.</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Flexibilidade Total:</strong> Se a central permitir, transformamos em smart.</span>
+					</li>
+					<li class="flex items-start gap-3 text-slate-300">
+						<svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+						</svg>
+						<span><strong class="text-white">Proteção sob Medida:</strong> Sensores ativos e passivos conforme sua infraestrutura.</span>
+					</li>
+				</ul>
+
+				<!-- Footer -->
+				<div class="pt-4 border-t border-slate-700/50">
+					<p class="text-sm text-slate-500 text-center italic">Sua segurança sem ficar refém de uma única marca.</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Ver Mais Link com Animação -->
+		<div class="text-center">
+			<a href="#contato" class="group inline-flex items-center gap-3 text-lg text-slate-300 hover:text-white transition-colors relative">
+				<span class="relative">
+					Ver todas as possibilidades
+					<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary-500 to-accent-500 group-hover:w-full transition-all duration-500"></span>
+				</span>
+				<svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+				</svg>
+			</a>
+		</div>
+	</div>
+</section>

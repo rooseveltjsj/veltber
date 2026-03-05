@@ -1,0 +1,19 @@
+<svg width="800" height="1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#075985;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#grad4)"/>
+  <circle cx="400" cy="450" r="100" fill="#0ea5e9" opacity="0.2"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" fill="#0ea5e9">
+    🚪 Entrada Premium
+  </text>
+  <text x="50%" y="52%" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#7dd3fc">
+    Porta Inteligente
+  </text>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#0369a1">
+    Substitua por: entrance-premium.jpg
+  </text>
+</svg>

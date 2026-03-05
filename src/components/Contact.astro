@@ -1,0 +1,334 @@
+---
+// Contact Section & Footer
+---
+
+<section id="contato" class="relative py-32 overflow-hidden" style="background-color: #0a0e17;">
+	<!-- Background Elements -->
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500 rounded-full blur-3xl animate-pulse" style="animation-duration: 4s;"></div>
+		<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse" style="animation-duration: 6s; animation-delay: 1s;"></div>
+	</div>
+
+	<div class="relative z-10 container mx-auto px-6">
+		<!-- Header -->
+		<div class="max-w-4xl mx-auto text-center mb-20">
+			<div class="inline-flex items-center gap-2 px-5 py-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full text-cyan-400 text-sm font-semibold mb-8 backdrop-blur-sm">
+				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+				</svg>
+				Fale Conosco
+			</div>
+			<h2 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+				Inicie Sua <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-sky-400 bg-clip-text text-transparent">Transformação</span>
+			</h2>
+			<p class="text-xl text-slate-300 leading-relaxed">
+				Especialistas em automação residencial de alto nível. Receba consultoria técnica personalizada.
+			</p>
+		</div>
+
+		<!-- Two Column Layout -->
+		<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
+			
+			<!-- Coluna Esquerda: Imagem + Bullet Points -->
+			<div class="space-y-8">
+				<!-- Imagem com Glow Ciano -->
+				<div class="relative group">
+					<!-- Glow Effect -->
+					<div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+					
+					<!-- Image Container -->
+					<div class="relative overflow-hidden rounded-3xl border-2 border-cyan-500/30 group-hover:border-cyan-500/60 transition-all duration-500">
+						<img 
+							src={`${import.meta.env.BASE_URL}images/contato-veltber.webp`}
+							alt="Consultoria Técnica Veltber - Automação Residencial Premium" 
+							class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+							loading="lazy"
+							width="800"
+							height="600"
+						/>
+						<!-- Overlay Gradient -->
+						<div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500"></div>
+					</div>
+				</div>
+
+				<!-- Bullet Points com Ícones -->
+				<div class="space-y-5">
+					<!-- Automação Agnóstica -->
+					<div class="flex items-start gap-4 p-4 bg-slate-900/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl hover:border-cyan-500/50 transition-all duration-300 group">
+						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/40 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+							<svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Automação Agnóstica</h3>
+							<p class="text-slate-400 text-sm leading-relaxed">Integramos qualquer marca: Alexa, Google Home, Tuya, Sonoff e mais.</p>
+						</div>
+					</div>
+
+					<!-- Segurança de Dados Local -->
+					<div class="flex items-start gap-4 p-4 bg-slate-900/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl hover:border-cyan-500/50 transition-all duration-300 group">
+						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/40 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+							<svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Segurança de Dados Local</h3>
+							<p class="text-slate-400 text-sm leading-relaxed">Seus dados ficam na sua rede. Zero dependência de nuvens externas.</p>
+						</div>
+					</div>
+
+					<!-- Escalabilidade de Hardware -->
+					<div class="flex items-start gap-4 p-4 bg-slate-900/40 backdrop-blur-sm border border-cyan-500/20 rounded-2xl hover:border-cyan-500/50 transition-all duration-300 group">
+						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/40 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+							<svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+							</svg>
+						</div>
+						<div>
+							<h3 class="text-lg font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">Escalabilidade de Hardware</h3>
+							<p class="text-slate-400 text-sm leading-relaxed">De smartphones a Raspberry Pi. Escolha o hardware ideal para seu projeto.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Quick Contact Info -->
+				<div class="flex flex-wrap gap-4 pt-4">
+					<a href="https://wa.me/5561992095346" class="flex items-center gap-2 px-5 py-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl text-slate-300 hover:bg-emerald-500/20 hover:text-white hover:border-emerald-500/50 transition-all group">
+						<svg class="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+						</svg>
+						<span class="font-medium">(61) 99209-5346</span>
+					</a>
+					<a href="mailto:rooseveltjsj@gmail.com" class="flex items-center gap-2 px-5 py-3 bg-blue-500/10 border border-blue-500/30 rounded-xl text-slate-300 hover:bg-blue-500/20 hover:text-white hover:border-blue-500/50 transition-all group">
+						<svg class="w-5 h-5 text-blue-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+						</svg>
+						<span class="font-medium">Email</span>
+					</a>
+				</div>
+			</div>
+
+			<!-- Coluna Direita: Formulário -->
+			<div class="relative">
+				<!-- Glow Background -->
+				<div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-3xl blur-2xl"></div>
+				
+				<form class="relative bg-slate-900/60 backdrop-blur-xl border border-cyan-500/20 rounded-3xl p-8 md:p-10 shadow-2xl">
+					<div class="mb-8 text-center">
+						<h3 class="text-2xl font-bold text-white mb-2">Consultoria Técnica Gratuita</h3>
+						<p class="text-slate-400 text-sm">Responda em até 24h úteis</p>
+					</div>
+
+					<!-- Nome Completo -->
+					<div class="mb-6">
+						<label for="nome" class="block text-sm font-semibold text-slate-300 mb-2">
+							Nome Completo
+						</label>
+						<input 
+							type="text" 
+							id="nome" 
+							name="nome" 
+							required
+							class="w-full px-4 py-3.5 bg-slate-950/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
+							placeholder="João Silva"
+						/>
+					</div>
+
+					<!-- E-mail -->
+					<div class="mb-6">
+						<label for="email" class="block text-sm font-semibold text-slate-300 mb-2">
+							E-mail
+						</label>
+						<input 
+							type="email" 
+							id="email" 
+							name="email" 
+							required
+							class="w-full px-4 py-3.5 bg-slate-950/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
+							placeholder="joao@exemplo.com"
+						/>
+					</div>
+
+					<!-- WhatsApp com Máscara -->
+					<div class="mb-6">
+						<label for="whatsapp" class="block text-sm font-semibold text-slate-300 mb-2">
+							WhatsApp
+						</label>
+						<input 
+							type="tel" 
+							id="whatsapp" 
+							name="whatsapp" 
+							required
+							class="w-full px-4 py-3.5 bg-slate-950/50 border border-slate-700/50 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all"
+							placeholder="(00) 00000-0000"
+							maxlength="15"
+						/>
+					</div>
+
+					<!-- Sua Necessidade -->
+					<div class="mb-8">
+						<label for="necessidade" class="block text-sm font-semibold text-slate-300 mb-2">
+							Sua Necessidade
+						</label>
+						<select 
+							id="necessidade" 
+							name="necessidade" 
+							required
+							class="w-full px-4 py-3.5 bg-slate-950/50 border border-slate-700/50 rounded-xl text-white focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all appearance-none cursor-pointer"
+							style="background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27 fill=%27none%27 stroke=%27%2306b6d4%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27%3e%3cpolyline points=%276 9 12 15 18 9%27%3e%3c/polyline%3e%3c/svg%3e'); background-repeat: no-repeat; background-position: right 0.75rem center; background-size: 1.5em 1.5em;"
+						>
+							<option value="" disabled selected>Selecione uma opção</option>
+							<option value="automacao">🏠 Automação Residencial</option>
+							<option value="seguranca">🛡️ Segurança Eletrônica</option>
+							<option value="infraestrutura">🌐 Infraestrutura de Rede</option>
+							<option value="consultoria">💡 Consultoria Home Assistant</option>
+						</select>
+					</div>
+
+					<!-- Submit Button com Gradiente Ciano/Azul -->
+					<button 
+						type="submit"
+						class="w-full py-4 bg-gradient-to-r from-cyan-500 via-blue-500 to-sky-500 rounded-xl font-bold text-lg text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] hover:-translate-y-0.5"
+					>
+						Iniciar Minha Consultoria Técnica
+					</button>
+
+					<!-- Privacy Note -->
+					<div class="flex items-start gap-2 mt-6 p-4 bg-cyan-500/5 border border-cyan-500/20 rounded-xl">
+						<svg class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+						</svg>
+						<p class="text-xs text-slate-400 leading-relaxed">
+							<strong class="text-cyan-400">100% Seguro:</strong> Seus dados são criptografados e jamais compartilhados com terceiros. Política de privacidade rigorosa.
+						</p>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<script>
+	// Máscara de WhatsApp
+	const whatsappInput = document.getElementById('whatsapp') as HTMLInputElement;
+	if (whatsappInput) {
+		whatsappInput.addEventListener('input', function(e) {
+			let value = (e.target as HTMLInputElement).value.replace(/\D/g, '');
+			if (value.length > 11) value = value.slice(0, 11);
+			
+			if (value.length > 10) {
+				value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
+			} else if (value.length > 6) {
+				value = value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
+			} else if (value.length > 2) {
+				value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+			} else if (value.length > 0) {
+				value = value.replace(/^(\d*)/, '($1');
+			}
+			
+			(e.target as HTMLInputElement).value = value;
+		});
+	}
+</script>
+
+<!-- Footer -->
+<footer class="relative bg-dark-950 border-t border-dark-800 py-12">
+	<div class="container mx-auto px-6">
+		<!-- Footer Content -->
+		<div class="grid md:grid-cols-3 gap-8 mb-8">
+			<!-- About -->
+			<div>
+				<h3 class="text-xl font-bold text-white mb-4">VELTBER</h3>
+				<p class="text-slate-400 leading-relaxed mb-4">
+					Especialistas em integração de casas inteligentes com tecnologia de ponta.
+				</p>
+				<!-- Contact Info -->
+				<div class="space-y-2 mb-4">
+					<div class="flex items-center gap-2 text-slate-400 text-sm">
+						<svg class="w-4 h-4 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+						</svg>
+						<a href="mailto:rooseveltjsj@gmail.com" class="hover:text-primary-500 transition-colors">rooseveltjsj@gmail.com</a>
+					</div>
+					<div class="flex items-center gap-2 text-slate-400 text-sm">
+						<svg class="w-4 h-4 text-accent-500" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+						</svg>
+						<a href="https://wa.me/5561992095346" class="hover:text-primary-500 transition-colors">(61) 99209-5346</a>
+					</div>
+				</div>
+				<div class="flex gap-4">
+					<a href="#" class="w-10 h-10 bg-dark-800 hover:bg-primary-500 rounded-lg flex items-center justify-center transition-colors">
+						<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+						</svg>
+					</a>
+					<a href="#" class="w-10 h-10 bg-dark-800 hover:bg-primary-500 rounded-lg flex items-center justify-center transition-colors">
+						<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+						</svg>
+					</a>
+					<a href="#" class="w-10 h-10 bg-dark-800 hover:bg-accent-500 rounded-lg flex items-center justify-center transition-colors">
+						<svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+							<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<!-- Quick Links -->
+			<div>
+				<h3 class="text-xl font-bold text-white mb-4">Links Rápidos</h3>
+				<ul class="space-y-2">
+					<li><a href="#sobre" class="text-slate-400 hover:text-primary-500 transition-colors">Sobre Nós</a></li>
+					<li><a href="#solucoes" class="text-slate-400 hover:text-primary-500 transition-colors">Soluções</a></li>
+					<li><a href="#contato" class="text-slate-400 hover:text-primary-500 transition-colors">Contato</a></li>
+				</ul>
+			</div>
+
+			<!-- Selo Home Assistant -->
+			<div>
+				<h3 class="text-xl font-bold text-white mb-4">Nossa Tecnologia</h3>
+				<div class="bg-gradient-to-r from-primary-500/10 to-accent-500/10 border border-primary-500/30 rounded-xl p-4">
+					<div class="flex items-center gap-3 mb-2">
+						<svg class="w-8 h-8 text-primary-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+						</svg>
+						<span class="font-bold text-white">Home Assistant</span>
+					</div>
+					<p class="text-sm text-slate-400 leading-relaxed">
+						Especialistas em <span class="text-accent-500 font-semibold">Home Assistant</span>: O ecossistema mais potente do mundo para automação residencial de código aberto.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom Bar -->
+		<div class="pt-8 border-t border-dark-800">
+			<!-- Manifesto em Destaque -->
+			<div class="text-center mb-8 max-w-3xl mx-auto">
+				<p class="text-base md:text-lg text-slate-300 leading-relaxed font-light">
+					Não somos apenas instaladores. Somos 
+					<span class="text-transparent bg-gradient-to-r from-primary-400 via-accent-400 to-sky-400 bg-clip-text font-semibold">arquitetos de ecossistemas inteligentes</span> 
+					que respeitam sua <span class="text-accent-400 font-medium">privacidade</span> e 
+					<span class="text-primary-400 font-medium">liberdade de escolha</span>.
+				</p>
+			</div>
+
+			<!-- Copyright & Links -->
+			<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+				<p class="text-slate-500 order-2 md:order-1">
+					© 2026 VELTBER - Tecnologia e Inovação. Todos os direitos reservados.
+				</p>
+				<div class="flex gap-6 text-slate-500 order-1 md:order-2">
+					<a href="#" class="hover:text-primary-400 transition-colors duration-200">Política de Privacidade</a>
+					<span class="text-slate-700">|</span>
+					<a href="#" class="hover:text-primary-400 transition-colors duration-200">Termos de Uso</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

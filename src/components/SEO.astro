@@ -1,0 +1,67 @@
+---
+export interface SEOProps {
+	title?: string;
+	description?: string;
+	canonical?: string;
+	ogImage?: string;
+}
+
+const {
+	title = 'VELTBER - Automação Residencial Inteligente | Home Assistant Brasília',
+	description = 'VELTBER: Especialistas em automação residencial com Home Assistant em Brasília. Integração de câmeras IP/Wi-Fi, DVRs, Alexa e Raspberry Pi. Controle total e privacidade.',
+	canonical = 'https://seu-usuario.github.io/AutomacaoResidencial/',
+	ogImage = `${import.meta.env.BASE_URL}images/og-image.jpg`
+} = Astro.props as SEOProps;
+
+const fullTitle = title.length > 60 ? title.substring(0, 57) + '...' : title;
+const fullDescription = description.length > 160 ? description.substring(0, 157) + '...' : description;
+---
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+<meta name="description" content={fullDescription} />
+<meta name="keywords" content="automação residencial brasília, home assistant, casa inteligente, alexa integração, raspberry pi automação, segurança local, smart home brasília" />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="Portuguese" />
+<meta name="author" content="VELTBER - Tecnologia e Inovação" />
+
+<!-- Canonical -->
+<link rel="canonical" href={canonical} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={fullDescription} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="VELTBER - Tecnologia e Inovação" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonical} />
+<meta property="twitter:title" content={fullTitle} />
+<meta property="twitter:description" content={fullDescription} />
+<meta property="twitter:image" content={ogImage} />
+
+<!-- Structured Data - Local Business -->
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "VELTBER - Tecnologia e Inovação",
+		"image": "{ogImage}",
+		"description": "{fullDescription}",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Brasília",
+			"addressRegion": "DF",
+			"addressCountry": "BR"
+		},
+		"telephone": "+55-61-99209-5346",
+		"email": "rooseveltjsj@gmail.com",
+		"priceRange": "$$",
+		"url": "{canonical}"
+	}
+</script>
