@@ -4,8 +4,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://seu-usuario.github.io',
-	base: import.meta.env.PROD ? '/AutomacaoResidencial' : '/',
+	site: 'https://rooseveltjsj.github.io',
+	base: '/veltber/',
 	integrations: [tailwind()],
 	build: {
 		assets: '_astro'
